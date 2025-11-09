@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: #EB5E28;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="sidebarRestSearch" layoutY="80.0" onMouseClicked="#showRestSearchPane" prefHeight="80.0" prefWidth="220.0" style="-fx-background-color: #403D39;">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="70.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text fill="#fffcf2" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant Search" wrappingWidth="135.13671875" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="3.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <SVGPath content="M22 21.2488H21V9.97875C21 9.35875 20.72 8.77875 20.23 8.39875L19 7.43875L18.98 4.98875C18.98 4.43875 18.53 3.99875 17.98 3.99875H14.57L13.23 2.95875C12.51 2.38875 11.49 2.38875 10.77 2.95875L3.77 8.39875C3.28 8.77875 3 9.35875 3 9.96875L2.95 21.2488H2C1.59 21.2488 1.25 21.5888 1.25 21.9988C1.25 22.4088 1.59 22.7488 2 22.7488H22C22.41 22.7488 22.75 22.4088 22.75 21.9988C22.75 21.5888 22.41 21.2488 22 21.2488ZM6.5 12.7487V11.2487C6.5 10.6987 6.95 10.2487 7.5 10.2487H9.5C10.05 10.2487 10.5 10.6987 10.5 11.2487V12.7487C10.5 13.2987 10.05 13.7487 9.5 13.7487H7.5C6.95 13.7487 6.5 13.2987 6.5 12.7487ZM14.5 21.2488H9.5V18.4987C9.5 17.6687 10.17 16.9987 11 16.9987H13C13.83 16.9987 14.5 17.6687 14.5 18.4987V21.2488ZM17.5 12.7487C17.5 13.2987 17.05 13.7487 16.5 13.7487H14.5C13.95 13.7487 13.5 13.2987 13.5 12.7487V11.2487C13.5 10.6987 13.95 10.2487 14.5 10.2487H16.5C17.05 10.2487 17.5 10.6987 17.5 11.2487V12.7487Z" fill="#eb5e28" fillRule="EVEN_ODD" style="-fx-scale-x: 1.5; -fx-scale-y: 1.5;" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="sidebarFoodSearch" layoutY="200.0" onMouseClicked="#showFoodSearchPane" prefHeight="80.0" prefWidth="220.0" style="-fx-background-color: #403D39;">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="70.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text fill="#fffcf2" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Search" wrappingWidth="121.13671875" GridPane.columnIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" />
+               </GridPane.margin>
+            </Text>
+            <SVGPath content="M56.411.719S7.623.704 7.637.719C3.14.719.612 3.044.612 7.793v48.966c0 4.443 2.273 6.769 6.766 6.769h49.173c4.493 0 6.769-2.21 6.769-6.769V7.793c.001-4.634-2.275-7.074-6.909-7.074zM30.749 23.374c0 1.536-1.399 3.181-3.215 3.181V52.49c0 3.682-5.018 3.682-5.018 0V26.555c-1.767 0-3.306-1.361-3.306-3.4V8.882c0-1.242 1.795-1.29 1.795.049v10.55h1.503V8.833c0-1.141 1.729-1.214 1.729.049v10.599h1.553V8.848c0-1.193 1.678-1.241 1.678.047v10.586h1.528V8.848c0-1.18 1.753-1.227 1.753.047v14.479zm13.386 29.104c0 3.601-5.028 3.547-5.028 0V36.496H36.43V12.199c0-5.656 7.706-5.656 7.706 0v40.279z" fill="#eb5e28" fillRule="EVEN_ODD" style="-fx-scale-x: .5; -fx-scale-y: .5;" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="sidebarRestOrder" layoutY="320.0" onMouseClicked="#showRestOrderPane" prefHeight="80.0" prefWidth="220.0" style="-fx-background-color: #403D39;">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="70.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text fill="#fffcf2" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant Order" wrappingWidth="125.13671875" GridPane.columnIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="3.0" />
+               </GridPane.margin>
+            </Text>
+            <SVGPath content="M3 2h2v20H3zm16 0H6v20h13c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-1 10H9v-2h9v2zm0-4H9V6h9v2z" fill="#eb5e28" fillRule="EVEN_ODD" style="-fx-scale-x: 1.5; -fx-scale-y: 1.5;" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: #FFFCF2;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="restNameText" fill="#403d39" layoutX="106.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant Name" wrappingWidth="326.13671875">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <ListView fx:id="categoryListView" layoutX="106.0" layoutY="218.0" prefHeight="72.0" prefWidth="226.0" style="-fx-background-color: #CCC5B9;" />
+      <Label layoutX="106.0" layoutY="191.0" prefHeight="17.0" prefWidth="102.0" text="Categories :" textFill="#403d39">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Text fx:id="scoreText" fill="#403d39" layoutX="168.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;score&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="106.0" layoutY="327.0" prefHeight="25.0" prefWidth="51.0" text="Score :" textFill="#403d39">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Text fx:id="priceText" fill="#403d39" layoutX="169.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;price&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="106.0" layoutY="364.0" prefHeight="25.0" prefWidth="51.0" text="Price :" textFill="#403d39">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Text fx:id="zipCodeText" fill="#403d39" layoutX="208.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;zipcode&gt;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="106.0" layoutY="464.0" prefHeight="25.0" prefWidth="82.0" text="Zip Code :" textFill="#403d39">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text fx:id="itemCountText" fill="#403d39" layoutX="169.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;itemcount&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="106.0" layoutY="402.0" prefHeight="25.0" prefWidth="51.0" text="Menu :" textFill="#403d39">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="960.0" style="-fx-background-color: #FFFCF2;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RDS.restaurantApp.RestaurantAppController">
+   <children>
+      <GridPane layoutY="80.0" prefHeight="720.0" prefWidth="960.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="200.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="746.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" percentHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane style="-fx-background-color: #EB5E28;">
+               <children>
+                  <GridPane layoutY="80.0" prefHeight="80.0" prefWidth="220.0" style="-fx-background-color: #403D39;">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+                      <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="70.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text fill="#fffcf2" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant Search" wrappingWidth="135.13671875" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="3.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <SVGPath content="M22 21.2488H21V9.97875C21 9.35875 20.72 8.77875 20.23 8.39875L19 7.43875L18.98 4.98875C18.98 4.43875 18.53 3.99875 17.98 3.99875H14.57L13.23 2.95875C12.51 2.38875 11.49 2.38875 10.77 2.95875L3.77 8.39875C3.28 8.77875 3 9.35875 3 9.96875L2.95 21.2488H2C1.59 21.2488 1.25 21.5888 1.25 21.9988C1.25 22.4088 1.59 22.7488 2 22.7488H22C22.41 22.7488 22.75 22.4088 22.75 21.9988C22.75 21.5888 22.41 21.2488 22 21.2488ZM6.5 12.7487V11.2487C6.5 10.6987 6.95 10.2487 7.5 10.2487H9.5C10.05 10.2487 10.5 10.6987 10.5 11.2487V12.7487C10.5 13.2987 10.05 13.7487 9.5 13.7487H7.5C6.95 13.7487 6.5 13.2987 6.5 12.7487ZM14.5 21.2488H9.5V18.4987C9.5 17.6687 10.17 16.9987 11 16.9987H13C13.83 16.9987 14.5 17.6687 14.5 18.4987V21.2488ZM17.5 12.7487C17.5 13.2987 17.05 13.7487 16.5 13.7487H14.5C13.95 13.7487 13.5 13.2987 13.5 12.7487V11.2487C13.5 10.6987 13.95 10.2487 14.5 10.2487H16.5C17.05 10.2487 17.5 10.6987 17.5 11.2487V12.7487Z" fill="#eb5e28" fillRule="EVEN_ODD" style="-fx-scale-x: 1.5; -fx-scale-y: 1.5;" />
+                     </children>
+                  </GridPane>
+                  <GridPane layoutY="200.0" prefHeight="80.0" prefWidth="220.0" style="-fx-background-color: #403D39;">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="70.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text fill="#fffcf2" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Search" wrappingWidth="121.13671875" GridPane.columnIndex="1" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="3.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <SVGPath content="M56.411.719S7.623.704 7.637.719C3.14.719.612 3.044.612 7.793v48.966c0 4.443 2.273 6.769 6.766 6.769h49.173c4.493 0 6.769-2.21 6.769-6.769V7.793c.001-4.634-2.275-7.074-6.909-7.074zM30.749 23.374c0 1.536-1.399 3.181-3.215 3.181V52.49c0 3.682-5.018 3.682-5.018 0V26.555c-1.767 0-3.306-1.361-3.306-3.4V8.882c0-1.242 1.795-1.29 1.795.049v10.55h1.503V8.833c0-1.141 1.729-1.214 1.729.049v10.599h1.553V8.848c0-1.193 1.678-1.241 1.678.047v10.586h1.528V8.848c0-1.18 1.753-1.227 1.753.047v14.479zm13.386 29.104c0 3.601-5.028 3.547-5.028 0V36.496H36.43V12.199c0-5.656 7.706-5.656 7.706 0v40.279z" fill="#eb5e28" fillRule="EVEN_ODD" style="-fx-scale-x: .5; -fx-scale-y: .5;" />
+                     </children>
+                  </GridPane>
+                  <GridPane layoutY="440.0" prefHeight="80.0" prefWidth="220.0" style="-fx-background-color: #403D39;">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="70.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text fill="#fffcf2" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders" wrappingWidth="60.13671875" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="3.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <SVGPath content="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z" fill="#eb5e28" fillRule="EVEN_ODD" style="-fx-scale-x: 1.5; -fx-scale-y: 1.5;" />
+                     </children>
+                  </GridPane>
+                  <GridPane layoutY="320.0" prefHeight="80.0" prefWidth="220.0" style="-fx-background-color: #403D39;">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" percentWidth="70.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text fill="#fffcf2" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant Menu" wrappingWidth="125.13671875" GridPane.columnIndex="1" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="3.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <SVGPath content="M3 2h2v20H3zm16 0H6v20h13c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-1 10H9v-2h9v2zm0-4H9V6h9v2z" fill="#eb5e28" fillRule="EVEN_ODD" style="-fx-scale-x: 1.5; -fx-scale-y: 1.5;" />
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+            <AnchorPane style="-fx-background-color: #FFFCF2;" GridPane.columnIndex="1">
+               <children>
+                  <TextField alignment="CENTER" layoutX="60.0" layoutY="148.0" prefHeight="25.0" prefWidth="128.0" promptText="Restaurant Name" />
+                  <TextField alignment="CENTER" layoutX="234.0" layoutY="148.0" prefHeight="25.0" prefWidth="128.0" promptText="Food Name" />
+                  <TextField alignment="CENTER" layoutX="423.0" layoutY="131.0" prefHeight="25.0" prefWidth="90.0" promptText="From" />
+                  <TextField alignment="CENTER" layoutX="423.0" layoutY="169.0" prefHeight="25.0" prefWidth="90.0" promptText="To" />
+                  <TextField alignment="CENTER" layoutX="562.0" layoutY="131.0" prefHeight="25.0" prefWidth="128.0" promptText="Category" />
+                  <Label layoutX="75.0" layoutY="123.0" text="Restaurant Name :" textFill="#252422" />
+                  <Label layoutX="264.0" layoutY="123.0" text="Food Name :" textFill="#252422" />
+                  <Label layoutX="452.0" layoutY="106.0" text="Price :" textFill="#252422" />
+                  <Label layoutX="599.0" layoutY="106.0" text="Category :" textFill="#252422" />
+                  <TableView layoutX="60.0" layoutY="222.0" prefHeight="346.0" prefWidth="655.0" style="-fx-background-color: #FFFCF2; -fx-border-color: #CCC5B9; -fx-border-width: 2;">
+                    <columns>
+                      <TableColumn prefWidth="41.0" text="No." />
+                        <TableColumn prefWidth="177.0" text="Restaurant" />
+                      <TableColumn prefWidth="199.0" text="Name" />
+                        <TableColumn prefWidth="55.0" text="Price" />
+                        <TableColumn prefWidth="168.0" text="Category" />
+                    </columns>
+                  </TableView>
+                  <Text fill="#252422" layoutX="258.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Food Items :">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="599.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #403D39;" text="Search" textFill="#fffcf2" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <TextField />
+      <AnchorPane fx:id="header" prefHeight="80.0" prefWidth="960.0" style="-fx-background-color: #252422;">
+         <children>
+            <Text fill="#fffcf2" layoutX="40.0" layoutY="50.0" smooth="false" stroke="#fffcf2" strokeType="OUTSIDE" strokeWidth="0.0" text="Khete Java?">
+               <font>
+                  <Font name="Segoe UI" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
